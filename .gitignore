@@ -1,0 +1,26 @@
+# OAuth credentials and tokens — NEVER commit these
+credentials.json
+token.json
+*.credentials.json
+client_secret_*.json
+client_secret_*.apps.googleusercontent.com.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Playwright snapshots
+.playwright-mcp/
+*.yml
+!examples/*.yml
