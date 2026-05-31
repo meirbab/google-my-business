@@ -216,7 +216,7 @@ Main profile actions → `button "Posts"` → `button "Add post"` → dialog `Ad
 
 After Post click, the new post shows `Pending` while Google reviews it.
 
-**🚨 HEALTHCARE GOTCHA (Routing ID DPNB)**: Google enforces a much stricter content policy on "Your Money or Your Life" categories — Dermatologist, Medical spa, Skin care clinic, any medical service. A single rejected post can **disable posting for the entire profile** (not just block one post). Recovery requires appealing via the Help Center link in the rejection email; takes 1-3 business days.
+**🚨 HEALTHCARE GOTCHA (Routing ID DPNB)**: Google enforces a much stricter content policy on "Your Money or Your Life" categories — Dermatologist, Medical spa, Skin care clinic, any medical service. A single rejected post can **disable posting for the entire profile** (not just block one post). Recovery requires submitting a support case via `support.google.com/business/gethelp` (NOT via reply email — the rejection notification is from `businessprofile-noreply@google.com`). Path: select profile → "Posts removed" category → Next → skip the case-in-progress prompt → Email channel → fill detailed appeal (acknowledge violation, commit to compliant content, request reinstatement). Returns a `2-XXXXXXXXXXXXX` case ID. Response in 1-3 business days via email.
 
 Triggers that get medical posts rejected:
 - **Outcome promises with timeframes** ("results within 2-6 months", "lasts X years")
