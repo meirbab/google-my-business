@@ -203,6 +203,40 @@ Each preset for Medical spa appears as a clickable option in a listbox. Click to
 
 Save → "pending review, up to one day". Same service can be added under multiple categories — Google uses the category match to pick which list to surface for a query. Worth duplicating high-value services across 2-3 categories.
 
+### Service descriptions (per-item, hidden behind a click)
+Click any service name in the Services dialog → opens "Edit service details" dialog with three fields: Service (name, 120 chars), Price (with ILS picker, default "No price"), and **Service description (300 chars)**. The description field is the hidden gem — most profiles leave it empty. Fill with technology/method explanation, body areas treated, results timeline, and phone CTA. Apply the **healthcare safety rules below** before saving.
+
+### Posts — high risk for healthcare businesses ⚠️
+Main profile actions → `button "Posts"` → `button "Add post"` → dialog `Add post` with:
+- `listbox "Post type"`: Update / Offer / Event
+- `textbox "Description"`: 1500 chars
+- Image drag-drop or `Select images and videos`
+- `Add link fields` button → expands to `Add a button (optional)` with menuitems: None, Book, Order online, Buy, Learn more, Sign up, Call now → adds `textbox "Link for your button*"`
+- `Post` button (bottom)
+
+After Post click, the new post shows `Pending` while Google reviews it.
+
+**🚨 HEALTHCARE GOTCHA (Routing ID DPNB)**: Google enforces a much stricter content policy on "Your Money or Your Life" categories — Dermatologist, Medical spa, Skin care clinic, any medical service. A single rejected post can **disable posting for the entire profile** (not just block one post). Recovery requires appealing via the Help Center link in the rejection email; takes 1-3 business days.
+
+Triggers that get medical posts rejected:
+- **Outcome promises with timeframes** ("results within 2-6 months", "lasts X years")
+- **Treatment area specificity** ("removes fat from belly, thighs, arms")
+- **Comparative claims** ("better than", "no need for surgery", "instead of")
+- **Aesthetic before/after implications** ("significant tightening", "smooths wrinkles")
+- **Salesy emojis** + "new!" + sales-style framing
+- Mentions of trademarked treatment brands without disclaimer
+
+Safe medical post pattern (rarely rejected):
+- Plain factual description ("X is a treatment for Y condition")
+- Link to dedicated page on your website (where you have medical authority context)
+- Optional Book/Call CTA
+- No outcome claims, no timeframes, no comparisons
+- One short paragraph, no bullets, no emoji
+
+Example safe post: "מידע על שירות שאיבת שומן Quantum RF זמין באתר הקליניקה. תיאום ייעוץ אישי: 052-445-3107."
+
+If posting is disabled, **service descriptions and the main profile Description are still editable** and carry more SEO weight anyway. Posts are mostly a freshness signal.
+
 ### Reviews (requires v4 API → blocked until form approval)
 Once quota lands: `gbp_client.list_reviews(location_name)` returns 5-100 most recent reviews. `reply_review(review_name, comment)` posts a reply. **Until then**, replies must be typed manually in business.google.com → Reviews tab.
 
