@@ -218,22 +218,39 @@ After Post click, the new post shows `Pending` while Google reviews it.
 
 **🚨 HEALTHCARE GOTCHA (Routing ID DPNB)**: Google enforces a much stricter content policy on "Your Money or Your Life" categories — Dermatologist, Medical spa, Skin care clinic, any medical service. A single rejected post can **disable posting for the entire profile** (not just block one post). Recovery requires submitting a support case via `support.google.com/business/gethelp` (NOT via reply email — the rejection notification is from `businessprofile-noreply@google.com`). Path: select profile → "Posts removed" category → Next → skip the case-in-progress prompt → Email channel → fill detailed appeal (acknowledge violation, commit to compliant content, request reinstatement). Returns a `2-XXXXXXXXXXXXX` case ID. Response in 1-3 business days via email.
 
-Triggers that get medical posts rejected:
-- **Outcome promises with timeframes** ("results within 2-6 months", "lasts X years")
-- **Treatment area specificity** ("removes fat from belly, thighs, arms")
-- **Comparative claims** ("better than", "no need for surgery", "instead of")
-- **Aesthetic before/after implications** ("significant tightening", "smooths wrinkles")
-- **Salesy emojis** + "new!" + sales-style framing
-- Mentions of trademarked treatment brands without disclaimer
+**The 6 hard rules** (derived from Google policy at support.google.com/business/answer/7213077 + answer/7400114, validated 2026-05-31):
 
-Safe medical post pattern (rarely rejected):
-- Plain factual description ("X is a treatment for Y condition")
-- Link to dedicated page on your website (where you have medical authority context)
-- Optional Book/Call CTA
-- No outcome claims, no timeframes, no comparisons
-- One short paragraph, no bullets, no emoji
+Medical/health services count as RESTRICTED Content per Google's policy. For posts on a Restricted category profile, these 6 rules ALL apply — violating any one gets the post rejected, and a rejection can disable posting profile-wide:
 
-Example safe post: "מידע על שירות שאיבת שומן Quantum RF זמין באתר הקליניקה. תיאום ייעוץ אישי: 052-445-3107."
+1. **No CTAs for sale of restricted services**: don't write "book now", "contact for consultation", "schedule treatment", "תיאום תור", "הזמן ייעוץ"
+2. **No phone numbers in the post body**: a phone number in text counts as "phone for purchase of restricted goods". Use the dedicated "Call now" Button field instead
+3. **No links to commerce-style landing pages**: a Book button pointing to `/liposuction/specific-treatment/` is "link to landing page where it's possible to purchase restricted goods". Point Learn More to a general info page or the homepage instead
+4. **No pricing/offers/deals**: includes "free consultation", "no commitment", "ללא התחייבות", "ייעוץ חינם", numeric prices
+5. **No outcome promises or specifics**: "results in 2-6 months", "significant skin tightening", "removes belly fat" — all count as misrepresentation
+6. **No salesy framing**: no comparative claims ("best", "no need for surgery"), no superlative emojis (💎 ✅ ✨), no "NEW!"/"BREAKTHROUGH!" tone
+
+Safe medical post template (validated 6/6 pass rate on dr-meir.com 2026-05-31 to 2026-06-01):
+```
+שירותי [שם הטיפול] במרפאת [שם הרופא] ב[עיר].
+
+[שם הרופא], רופא עור מומחה.
+
+מתחם [מיקום], [כתובת].
+
+[Learn more button → https://homepage.com/ — general info page, NOT a service-purchase page]
+```
+
+For SURGICAL procedures (liposuction of any kind, including laser-assisted) when the clinic is NOT the operating room, add a transparency disclosure:
+```
+שירותי ייעוץ ומעקב ל[שם הניתוח] במרפאת [שם הרופא] ב[עיר].
+
+הפרוצדורה עצמה מבוצעת בחדר ניתוח מורשה ב[עיר ניתוחים].
+...
+```
+
+**Never use** "ללא ניתוח" / "non-surgical" / "without surgery" — it's a comparative claim Google flags as restricted-services marketing, AND it's often technically inaccurate (laser lipo still involves an incision).
+
+That's it. No treatment description, no outcomes, no phone in body. The Call now button (if added separately) and Learn More button are the only ways to expose CTA — and they must point to info, not commerce.
 
 If posting is disabled, **service descriptions and the main profile Description are still editable** and carry more SEO weight anyway. Posts are mostly a freshness signal.
 
